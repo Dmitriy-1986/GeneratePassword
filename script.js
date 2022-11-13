@@ -6,7 +6,7 @@ function generatePassword() {
         charsetPassword = 'abcdefghijklmnopqrstuvwxyz';
         charsetPassword += 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
         charsetPassword += '0123456789';
-        //charsetPassword += '~`!@#$%^&*()_-+';
+        charsetPassword += '~`!@#$%^&*()_-+';
 
     for(let i = 0, n = charsetPassword.length; i < lengthPassword; ++i) {
         retVal += charsetPassword.charAt(Math.floor(Math.random() * n));
