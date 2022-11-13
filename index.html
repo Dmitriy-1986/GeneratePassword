@@ -5,8 +5,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <style>
+        .container {
+            margin: 0 auto;
+            max-width: 600px;
+            padding: 50px;
+        }
+
+        .generate-password {
+            width: 350px;
+            padding: 5px;
+        }
+
+        .btn-generate-password, 
+        .btn-reload-password,
+        .btn-past-password {
+            padding: 5px;
+        }
+
+        .textarea-password {
+            margin-top: 5px;
+            width: 350px;
+            height: 100px;
+            padding: 5px;
+        }
+    </style>
 </head>
 <body>
-      <script src="./script.js"></script>
+
+    <div class="container">
+        <input type="text" id="generatePasswordInput" class="generate-password">
+        <button id="btnCopyPassword" class="btn-generate-password">Copy</button>
+        <button id="btnPastPassword" class="btn-past-password">Past</button>
+        <button id="btnReloadPassword" class="btn-reload-password">Reload</button>
+        <textarea id="textareaPassword" class="textarea-password"></textarea>
+    </div>
+
+    <script src="./script.js"></script>
 </body>
 </html>
